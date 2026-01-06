@@ -1,13 +1,17 @@
 1. Introduction:-
-This study analyzes YouTube view data from the past 60 days to identify trends and forecast short-term performance. Using Python and time-series techniques, the analysis aims to understand changes in views and support data-driven content planning.
 
-2. Dataset Description:-
+   This study analyzes YouTube view data from the past 60 days to identify trends and forecast short-term performance. Using Python and time-series techniques, the analysis aims to understand changes in views and support 
+   data-driven content planning.
 
-The dataset used in this study consists of daily YouTube performance metrics collected over a period of 60 days. The data includes key variables such as views, likes, and subscriber count. The dataset is structured in a tabular format and contains no missing or null values.
+3. Dataset Description:-
 
-The data was sourced from YouTube Analytics and stored in an Excel file. Prior to analysis, the dataset was imported into Python and prepared for time-series analysis without requiring additional imputation or data cleaning.
+   The dataset used in this study consists of daily YouTube performance metrics collected over a period of 60 days. The data includes key variables such as views, likes, and subscriber count. The dataset is structured in 
+   a tabular format and contains no missing or null values.
 
-3. Research Questions:-
+  The data was sourced from YouTube Analytics and stored in an Excel file. Prior to analysis, the dataset was imported into Python and prepared for time-series analysis without requiring additional imputation or data 
+  cleaning.
+
+3.  Research Questions:-
 
 (A) How have Views, Likes, and Subscribers changed over the past 60 days?
 
@@ -17,7 +21,7 @@ The data was sourced from YouTube Analytics and stored in an Excel file. Prior t
 
 (D) What is the expected performance of the channel in the next 5 days?
 
-4. Methodology:-
+4.  Methodology:-
 
 (A) Data Cleaning: Converted Views/Likes/Subscribers from strings like '1.3K' to numeric values.
 
@@ -29,15 +33,17 @@ The data was sourced from YouTube Analytics and stored in an Excel file. Prior t
 
 (E) ARIMA Forecasting: Built ARIMA(1,1,1) model on Views to predict next 5 days.
 
-5. Analytical Summary:-
+5.  Analytical Summary:-
  
- The analysis indicates a positive growth trend in channel performance over the observed 60-day period. Views exhibited high variability with several sharp spikes, while overall engagement increased toward the later part of the dataset.
+(A) The analysis indicates a positive growth trend in channel performance over the observed 60-day period. Views exhibited high variability with several sharp spikes, while overall engagement increased toward the later 
+    part of the dataset.
 
-Linear regression analysis shows an upward trend across views, likes, and subscribers, indicating sustained growth. The 7-day moving average helped smooth short-term fluctuations and revealed increasing stability in audience engagement.
+(B) Linear regression analysis shows an upward trend across views, likes, and subscribers, indicating sustained growth. The 7-day moving average helped smooth short-term fluctuations and revealed increasing stability in 
+    audience engagement.
 
-Short-term forecasting using time-series techniques suggests that views are likely to stabilize in the near future, supporting the reliability of recent performance improvements.
+(C) Short-term forecasting using time-series techniques suggests that views are likely to stabilize in the near future, supporting the reliability of recent performance improvements.
 
-6. Assumptions:-
+6.  Assumptions:-
 
 (A) Past trends in the last 60 days are representative of near-future behavior.
 
@@ -51,7 +57,7 @@ The time series is weakly stationary after differencing (ARIMA handles trend wit
 
 No major structural breaks in the data.
 
-7. Limitations:-
+7.  Limitations:-
 
 (A) Forecast horizon is short (5 days) because longer forecasts may be unreliable with only 60 days of data.
 
@@ -61,7 +67,7 @@ No major structural breaks in the data.
 
 (D) Small dataset size (60 points) may limit model accuracy.
 
-8. Implications:-
+8.  Implications:-
 
 (A) Helps in planning content strategy based on expected trends.
 
@@ -73,6 +79,8 @@ No major structural breaks in the data.
 
 9. Conclusion:-
 
-This study analyzed YouTube performance data over a 60-day period to identify trends and generate short-term forecasts using data analytics and time-series methods. The results indicate a positive growth trend in views, likes, and subscribers, with short-term fluctuations captured through moving averages.
+  This study analyzed YouTube performance data over a 60-day period to identify trends and generate short-term forecasts using data analytics and time-series methods. The results indicate a positive growth trend in v 
+  views, likes, and subscribers, with short-term fluctuations captured through moving averages.
+
 
 The use of linear regression and ARIMA forecasting demonstrates how historical engagement data can be leveraged to support data-driven decision making in digital content strategy. Despite certain limitations related to dataset size and external factors, the analysis provides meaningful insights into short-term performance behavior.
